@@ -566,6 +566,19 @@ class Character extends FlxSprite
 				playAnim('idle');
 
 				flipX = true;
+			case 'squid':
+				frames = Paths.getSparrowAtlas('characters/squid', 'shared');
+
+				animation.addByPrefix('idle', 'idle', 24, false);
+				animation.addByPrefix('singUP', 'up', 24, false);
+				animation.addByPrefix('singLEFT', 'left', 24, false);
+				animation.addByPrefix('singRIGHT', 'right', 24, false);
+				animation.addByPrefix('singDOWN', 'down', 24, false);
+
+				globalOffset = [0, 170];
+
+				barColor = FlxColor.fromRGB(187, 223, 209);
+				playAnim('idle');
 		}
 		dance();
 
