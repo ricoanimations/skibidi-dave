@@ -46,8 +46,8 @@ class FreeplayState extends MusicBeatState
 
 	private var CurrentSongIcon:FlxSprite;
 
-	private var Catagories:Array<String> = ['base'];
-	var translatedCatagory:Array<String> = [LanguageManager.getTextString('freeplay_base')];
+	private var Catagories:Array<String> = ['skibidi', 'extras', 'base'];
+	var translatedCatagory:Array<String> = [LanguageManager.getTextString('freeplay_skibidi'), LanguageManager.getTextString('freeplay_extra'), LanguageManager.getTextString('freeplay_base')];
 
 	var weekList:Array<String> = [];
 
@@ -58,7 +58,8 @@ class FreeplayState extends MusicBeatState
 
 	var songColors:Array<FlxColor> =
 	[
-
+		FlxColor.fromRGB(187, 223, 209), // erm, what the sigma
+		FlxColor.fromRGB(15, 95, 255), // dave
 	];
 	public static var skipSelect:Array<String> =
 	[
@@ -201,6 +202,10 @@ class FreeplayState extends MusicBeatState
 	{
 		switch (Catagories[CurrentPack].toLowerCase())
 		{
+			case 'skibidi':
+				addWeek(['sigma', 'mewing-master', 'ETERNAL-EDGING'], 0, ['squid', 'squid', 'squid']);
+			case 'extras':
+				addWeek(['skibidi-rizz'], 1, ['dave']);
 			case 'base':
 				for(i in 0...weekList.length)
 				{
