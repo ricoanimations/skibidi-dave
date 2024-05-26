@@ -282,6 +282,23 @@ class Character extends FlxSprite
 
 				barColor = FlxColor.fromRGB(187, 223, 209);
 				playAnim('idle');
+			case 'dave':
+				frames = Paths.getSparrowAtlas('characters/dave_sheet', 'shared');
+				animation.addByPrefix('idle', 'idle', 24, false);
+				for (anim in ['left', 'down', 'up', 'right'])
+				{
+					animation.addByPrefix('sing${anim.toUpperCase()}', '${anim}0', 24, false);
+					animation.addByPrefix('sing${anim.toUpperCase()}miss', '$anim miss', 24, false);
+				}
+				animation.addByPrefix('hey', 'hey', 24, false);
+	
+				globalOffset = [0, 170];
+
+				barColor = FlxColor.fromRGB(15, 95, 255);
+				
+				loadOffsetFile(curCharacter);
+
+				playAnim('idle');
 		}
 		dance();
 
