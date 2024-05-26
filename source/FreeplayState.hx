@@ -46,8 +46,8 @@ class FreeplayState extends MusicBeatState
 
 	private var CurrentSongIcon:FlxSprite;
 
-	private var Catagories:Array<String> = ['skibidi', 'extras', 'base'];
-	var translatedCatagory:Array<String> = [LanguageManager.getTextString('freeplay_skibidi'), LanguageManager.getTextString('freeplay_extra'), LanguageManager.getTextString('freeplay_base')];
+	private var Catagories:Array<String> = ['skibidi', 'extras'];
+	var translatedCatagory:Array<String> = [LanguageManager.getTextString('freeplay_skibidi'), LanguageManager.getTextString('freeplay_extra')];
 
 	var weekList:Array<String> = [];
 
@@ -60,6 +60,7 @@ class FreeplayState extends MusicBeatState
 	[
 		FlxColor.fromRGB(187, 223, 209), // erm, what the sigma
 		FlxColor.fromRGB(15, 95, 255), // dave
+		FlxColor.fromRGB(202, 31, 111), // gf
 	];
 	public static var skipSelect:Array<String> =
 	[
@@ -203,9 +204,12 @@ class FreeplayState extends MusicBeatState
 		switch (Catagories[CurrentPack].toLowerCase())
 		{
 			case 'skibidi':
-				addWeek(['sigma', 'mewing-master', 'ETERNAL-EDGING'], 0, ['squid', 'squid', 'squid']);
+				addWeek(['rizzing-tips'], 2, ['gf']);
+				addWeek(['skibidi-dave', 'mewing-master', 'sigma', 'GET-OUT', 'ETERNAL-EDGING'], 0, ['squid', 'squid', 'squid', 'squid', 'squid']);
 			case 'extras':
 				addWeek(['skibidi-rizz'], 1, ['dave']);
+				addWeek(['all-my-sigmas'], 3, ['rico']);
+				addWeek(['your-rizz'], 4, ['baldi']);
 		}
 	}
 

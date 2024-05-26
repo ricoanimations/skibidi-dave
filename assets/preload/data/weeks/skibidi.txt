@@ -1,5 +1,5 @@
-Skibidi-Dave:squid
-Sigma:squid
+skibidi-dave:squid
+mewing-master:squid
+sigma:squid
 GET-OUT:squid
-Mewing-Master:squid
-Eternal-Edging:squid
+ETERNAL-EDGING:squid
