@@ -205,7 +205,7 @@ class FreeplayState extends MusicBeatState
 		{
 			case 'skibidi':
 				addWeek(['rizzing-tips'], 2, ['gf']);
-				addWeek(['skibidi-dave', 'mewing-master', 'sigma', 'GET-OUT', 'ETERNAL-EDGING'], 0, ['squid', 'squid', 'squid', 'squid', 'squid']);
+				addWeek(['skibidi-dave', 'mewing-master', 'sigma', 'GET-OUT', 'ETERNAL-EDGING'], 0, ['squid', 'amogus', 'squid', 'squid', 'squid']);
 			case 'extras':
 				addWeek(['skibidi-rizz'], 1, ['dave']);
 				addWeek(['all-my-sigmas'], 3, ['rico']);

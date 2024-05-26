@@ -299,6 +299,20 @@ class Character extends FlxSprite
 				loadOffsetFile(curCharacter);
 
 				playAnim('idle');
+			case 'amogus':
+				frames = Paths.getSparrowAtlas('characters/amogus', 'shared');
+
+				animation.addByPrefix('idle', 'idle', 24, false);
+				animation.addByPrefix('singUP', 'up', 24, false);
+				animation.addByPrefix('singLEFT', 'left', 24, false);
+				animation.addByPrefix('singRIGHT', 'right', 24, false);
+				animation.addByPrefix('singDOWN', 'down', 24, false);
+
+				globalOffset = [0, 0];
+
+				barColor = FlxColor.fromRGB(49, 255, 234);
+				
+				playAnim('idle');
 		}
 		dance();
 

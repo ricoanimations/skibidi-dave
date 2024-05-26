@@ -2,3 +2,4 @@ bf:bf:#31b0d1
 bf-pixel:bf-pixel:#31b0d1
 gf:gf:#a5004d
 squid:squid:#bbdfd1
+amogus:amogus:#31ffea
