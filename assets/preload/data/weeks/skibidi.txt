@@ -1,5 +1,3 @@
-skibidi-dave:squid
-mewing-master:squid
-sigma:squid
-GET-OUT:squid
-ETERNAL-EDGING:squid
+placeholder:dave
+placeholder:dave
+skibidi-dave:dave
