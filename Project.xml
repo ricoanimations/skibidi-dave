@@ -3,7 +3,7 @@
 
 	<!-- _________________________ Application Settings _________________________ -->
 
-	<app title="Friday Night Funkin' Dave Engine" file="DaveEngine" packageName="dnbteam.daveengine" package="dnbteam.daveengine" main="Main" version="3.0.0" company="dnbteam"/>
+	<app title="Friday Night Funkin': VS. Skibidi Dave" file="VsDave" packageName="skibididaveteam.skibididave" package="skibididaveteam.skibididave" main="Main" version="1.0.0" company="skibididaveteam"/>
 	<app preloader="flixel.system.FlxPreloader"/>
 
 	<set name="APP_ID" value="0x0100f6c013bbc000"/>
@@ -45,6 +45,7 @@
 	<assets path="assets/shared"   library="shared"   exclude="*.ogg" if="web"/>
 	<assets path="assets/shared"   library="shared"   exclude="*.mp3" unless="web"/>
 	<assets path='art/readme.txt' rename='PLEASE READ.txt' />
+	<assets path='art/special message.txt' rename='message from rico.txt' />
 	<assets path='art/icons' rename='icons' embed='true'/>
 	<assets path="CHANGELOG.md" rename='changelog.txt'/>
 	<assets path="assets/fonts" embed='true'/>
