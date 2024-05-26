@@ -28,7 +28,7 @@ class StoryMenuState extends MusicBeatState
 {
 	var scoreText:FlxText;
 
-	public static var weekUnlocked:Array<Bool> = [true, true, true, true, true, true, true, true];
+	public static var weekUnlocked:Array<Bool> = [true, true];
 
 	var txtWeekTitle:FlxText;
 
@@ -47,13 +47,7 @@ class StoryMenuState extends MusicBeatState
 	var weeks:Array<Week> = [];
 	var bannerNames:Array<String> = [
 		'menu_stage',
-		'menu_stage',
-		'menu_halloween',
-		'menu_philly',
-		'menu_limo',
-		'menu_christmas',
-		'menu_school',
-		'menu_tank'
+		'menu_skibidi'
 	];
 
 	var weekBanners:Array<FlxSprite> = new Array<FlxSprite>();

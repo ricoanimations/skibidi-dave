@@ -206,13 +206,6 @@ class FreeplayState extends MusicBeatState
 				addWeek(['sigma', 'mewing-master', 'ETERNAL-EDGING'], 0, ['squid', 'squid', 'squid']);
 			case 'extras':
 				addWeek(['skibidi-rizz'], 1, ['dave']);
-			case 'base':
-				for(i in 0...weekList.length)
-				{
-					var mainCharacter = createSongArrayFromTxt(weekList[i], 'char');
-					addWeek(createSongArrayFromTxt(weekList[i], 'songs'), i, createSongArrayFromTxt(weekList[i], 'char'));
-					songColors.push(FlxColor.fromString(getColorCode(mainCharacter[0])));
-				}
 		}
 	}
 
