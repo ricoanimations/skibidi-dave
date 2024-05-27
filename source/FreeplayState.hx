@@ -204,7 +204,7 @@ class FreeplayState extends MusicBeatState
 	{
 		switch (Catagories[CurrentPack].toLowerCase())
 		{
-			case 'skibidi':
+			case 'story':
 				addWeek(['rizzing-tips'], 2, ['gf']);
 				addWeek(['plains', 'concealed', 'skibidi-dave'], 1, ['dave', 'dave', 'dave']);
 				addWeek(['sigma', 'GET-OUT', 'PERNICIOUS'], 0, ['squid', 'squid', 'squid']);
