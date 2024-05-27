@@ -3205,17 +3205,6 @@ class PlayState extends MusicBeatState
 			boyfriend.playAnim('hey', true);
 		}
 
-		if (curSong.toLowerCase() == 'sigma')
-		{
-			switch (curBeat)
-			{
-				case 48:
-					remove(dad);
-					dad = new Character(0, 170, 'dave');
-					add(dad);
-			}
-		}
-
 		if (curBeat % 16 == 15 && SONG.song == 'Tutorial' && dad.curCharacter == 'gf' && curBeat > 16 && curBeat < 48)
 		{
 			boyfriend.playAnim('hey', true);
