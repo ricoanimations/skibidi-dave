@@ -4,3 +4,5 @@ gf:gf:#a5004d
 squid:squid:#bbdfd1
 amogus:amogus:#31ffea
 lankybox:lankybox:#ffdee7
+tristan:tristan:#ff130f
+bambi:bambi:#25bf37

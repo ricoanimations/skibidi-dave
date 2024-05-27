@@ -327,6 +327,51 @@ class Character extends FlxSprite
 				barColor = FlxColor.fromRGB(255, 222, 231);
 				
 				playAnim('idle');
+			case 'bambi':
+				frames = Paths.getSparrowAtlas('characters/bambiRemake', 'shared');
+				animation.addByPrefix('idle', 'bambi idle', 24, false);
+				for (anim in ['left', 'down', 'up', 'right'])
+				{
+					animation.addByPrefix('sing${anim.toUpperCase()}', 'bambi $anim', 24, false);
+					animation.addByPrefix('sing${anim.toUpperCase()}miss', 'miss $anim', 24, false);
+				}
+				for (anim in ['left', 'right'])
+				{
+					animation.addByPrefix('sing${anim.toUpperCase()}-alt', 'bambi alt $anim', 24, false);
+				}
+				animation.addByPrefix('hey', 'bambi look', 24, false);
+				animation.addByPrefix('singSmash', 'bambi phone', 24, false);
+				animation.addByPrefix('singThrow', 'bambi throw', 24, false);
+
+				barColor = FlxColor.fromRGB(37, 191, 55);
+
+				loadOffsetFile(curCharacter);
+
+				globalOffset = [37, 90];
+
+				playAnim('idle');
+			case 'tristan':
+				frames = Paths.getSparrowAtlas('characters/TRISTAN', 'shared');
+
+				animation.addByPrefix('idle', 'BF idle dance', 24, false);
+				for (anim in ['LEFT', 'DOWN', 'UP', 'RIGHT'])
+				{
+					animation.addByPrefix('sing$anim', 'BF NOTE ${anim}0', 24, false);
+					animation.addByPrefix('sing${anim}miss', 'BF NOTE $anim MISS', 24, false);
+				}
+				animation.addByPrefix('hey', 'BF HEY!!', 24, false);
+				animation.addByPrefix('scared', 'BF idle shaking', 24);
+				animation.addByPrefix('dodge', "boyfriend dodge", 24, false);
+
+				globalOffset = [0, 15];
+
+				loadOffsetFile(curCharacter);
+
+				barColor = FlxColor.fromRGB(255, 19, 15);
+				nativelyPlayable = true;
+				flipX = true;
+
+				playAnim('idle');
 		}
 		dance();
 
