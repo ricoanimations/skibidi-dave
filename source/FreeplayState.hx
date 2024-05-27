@@ -206,12 +206,12 @@ class FreeplayState extends MusicBeatState
 		{
 			case 'skibidi':
 				addWeek(['rizzing-tips'], 2, ['gf']);
-				addWeek(['plains', 'placeholder', 'skibidi-dave'], 1, ['dave', 'dave', 'dave']);
-				addWeek(['sigma', 'GET-OUT', 'placeholder'], 0, ['squid', 'squid', 'squid']);
-				addWeek(['mewing-master', 'let-them-burn', 'placeholder'], 3, ['amogus', 'amogus', 'amogus']);
-				addWeek(['placeholder', 'ETERNAL-EDGING', 'fin'], 1, ['dave', 'dave', 'dave']);
+				addWeek(['plains', 'concealed', 'skibidi-dave'], 1, ['dave', 'dave', 'dave']);
+				addWeek(['sigma', 'GET-OUT', 'PERNICIOUS'], 0, ['squid', 'squid', 'squid']);
+				addWeek(['mewing-master', 'let-them-burn', 'COMBUSTION'], 3, ['amogus', 'amogus', 'amogus']);
+				addWeek(['skibidi-rizz', 'skibidi-slicers', 'skibidi-battle'], 4, ['lankybox', 'grantwisler', 'dave']);
+				addWeek(['PHANTASMAGORIA', 'ETERNAL-EDGING', 'fin'], 1, ['dave', 'dave', 'dave']);
 			case 'extras':
-				addWeek(['skibidi-rizz'], 1, ['dave']);
 				addWeek(['all-my-sigmas'], 3, ['rico']);
 				addWeek(['your-rizz'], 4, ['rico']);
 		}
