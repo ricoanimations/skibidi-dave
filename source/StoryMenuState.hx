@@ -28,7 +28,7 @@ class StoryMenuState extends MusicBeatState
 {
 	var scoreText:FlxText;
 
-	public static var weekUnlocked:Array<Bool> = [true, false, false, false, false, false];
+	public static var weekUnlocked:Array<Bool> = [true, true, false, false, false, false];
 
 	var txtWeekTitle:FlxText;
 
