@@ -313,6 +313,20 @@ class Character extends FlxSprite
 				barColor = FlxColor.fromRGB(49, 255, 234);
 				
 				playAnim('idle');
+			case 'lankybox':
+				frames = Paths.getSparrowAtlas('characters/lankybox', 'shared');
+
+				animation.addByPrefix('idle', 'idle', 24, false);
+				animation.addByPrefix('singUP', 'up', 24, false);
+				animation.addByPrefix('singLEFT', 'left', 24, false);
+				animation.addByPrefix('singRIGHT', 'right', 24, false);
+				animation.addByPrefix('singDOWN', 'down', 24, false);
+
+				globalOffset = [0, 0];
+
+				barColor = FlxColor.fromRGB(255, 222, 231);
+				
+				playAnim('idle');
 		}
 		dance();
 
