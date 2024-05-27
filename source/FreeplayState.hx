@@ -212,6 +212,7 @@ class FreeplayState extends MusicBeatState
 				addWeek(['skibidi-rizz', 'skibidi-slicers', 'skibidi-battle'], 4, ['lankybox', 'grantwisler', 'dave']);
 				addWeek(['PHANTASMAGORIA', 'ETERNAL-EDGING', 'fin'], 1, ['dave', 'dave', 'dave']);
 			case 'extras':
+				addWeek(['skibidi-rizz-old', 'sigma-old'], 1, ['dave', 'dave']);
 				addWeek(['all-my-sigmas'], 3, ['rico']);
 				addWeek(['your-rizz'], 4, ['rico']);
 		}
