@@ -372,7 +372,7 @@ class FreeplayState extends MusicBeatState
 						{
 							addSong(song, weekNum, songCharacters[num], false);
 						}
-				case 'phantasmagroia' | 'eternal-edging' | 'fin':
+				case 'phantasmagoria' | 'eternal-edging' | 'fin':
 					if (!FlxG.save.data.finaleweekUnlocked)
 						{
 							addSong('unknown', weekNum, songCharacters[num], true);
