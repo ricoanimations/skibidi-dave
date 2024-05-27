@@ -238,6 +238,10 @@ class FreeplayState extends MusicBeatState
 			var icon:HealthIcon = new HealthIcon(songs[i].songCharacter);
 			icon.sprTracker = songText;
 			icon.scrollFactor.set();
+			if(songs[i].blackoutIcon)
+			{
+				icon.color = FlxColor.BLACK;
+			}
 
 			iconArray.push(icon);
 			add(icon);
@@ -298,9 +302,9 @@ class FreeplayState extends MusicBeatState
 		changeSelection();
 	}
 
-	public function addSong(songName:String, weekNum:Int, songCharacter:String)
+	public function addSong(songName:String, weekNum:Int, songCharacter:String, blackoutIcon:Bool = false)
 	{
-		songs.push(new SongMetadata(songName, weekNum, songCharacter));
+		songs.push(new SongMetadata(songName, weekNum, songCharacter, blackoutIcon));
 	}
 
 	public function UpdatePackSelection(change:Int)
@@ -330,7 +334,56 @@ class FreeplayState extends MusicBeatState
 
 		for (song in songs)
 		{
-			addSong(song, weekNum, songCharacters[num]);
+			switch (song.toLowerCase())
+			{
+				case 'plains' | 'concealed' | 'skibidi-dave':
+					if (!FlxG.save.data.skibidiweekUnlocked)
+						{
+							addSong('unknown', weekNum, songCharacters[num], true);
+						}
+						else
+						{
+							addSong(song, weekNum, songCharacters[num], false);
+						}
+				case 'sigma' | 'get-out' | 'pernicious':
+					if (!FlxG.save.data.sigmaweekUnlocked)
+						{
+							addSong('unknown', weekNum, songCharacters[num], true);
+						}
+						else
+						{
+							addSong(song, weekNum, songCharacters[num], false);
+						}
+				case 'mewing-master' | 'let-them-burn' | 'combustion':
+					if (!FlxG.save.data.amogusweekUnlocked)
+						{
+							addSong('unknown', weekNum, songCharacters[num], true);
+						}
+						else
+						{
+							addSong(song, weekNum, songCharacters[num], false);
+						}
+				case 'skibidi-rizz' | 'skibidi-slicers' | 'skibidi-battle':
+					if (!FlxG.save.data.randomweekUnlocked)
+						{
+							addSong('unknown', weekNum, songCharacters[num], true);
+						}
+						else
+						{
+							addSong(song, weekNum, songCharacters[num], false);
+						}
+				case 'phantasmagroia' | 'eternal-edging' | 'fin':
+					if (!FlxG.save.data.finaleweekUnlocked)
+						{
+							addSong('unknown', weekNum, songCharacters[num], true);
+						}
+						else
+						{
+							addSong(song, weekNum, songCharacters[num], false);
+						}
+				default:
+					addSong(song, weekNum, songCharacters[num]);
+			}
 
 			if (songCharacters.length != 1)
 				num++;
@@ -483,6 +536,8 @@ class FreeplayState extends MusicBeatState
 			{
 				switch (songs[curSelected].songName)
 				{
+					case 'unknown':
+                    	FlxG.sound.play(Paths.sound('scrollMenu'), 0.4);
 					default:
 						FlxG.sound.music.fadeOut(1, 0);
 						PlayState.SONG = Song.loadFromJson(songs[curSelected].songName.toLowerCase());
@@ -626,11 +681,13 @@ class SongMetadata
 	public var songName:String = "";
 	public var week:Int = 0;
 	public var songCharacter:String = "";
+	public var blackoutIcon:Bool = false;
 
-	public function new(song:String, week:Int, songCharacter:String)
+	public function new(song:String, week:Int, songCharacter:String, blackoutIcon:Bool)
 	{
 		this.songName = song;
 		this.week = week;
 		this.songCharacter = songCharacter;
+		this.blackoutIcon = blackoutIcon;
 	}
 }
