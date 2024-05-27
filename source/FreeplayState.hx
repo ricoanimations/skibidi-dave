@@ -46,8 +46,8 @@ class FreeplayState extends MusicBeatState
 
 	private var CurrentSongIcon:FlxSprite;
 
-	private var Catagories:Array<String> = ['skibidi', 'extras'];
-	var translatedCatagory:Array<String> = [LanguageManager.getTextString('freeplay_skibidi'), LanguageManager.getTextString('freeplay_extra')];
+	private var Catagories:Array<String> = ['story', 'extras'];
+	var translatedCatagory:Array<String> = [LanguageManager.getTextString('freeplay_story'), LanguageManager.getTextString('freeplay_extra')];
 
 	var weekList:Array<String> = [];
 

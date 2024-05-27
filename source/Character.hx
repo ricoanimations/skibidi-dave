@@ -308,7 +308,7 @@ class Character extends FlxSprite
 				animation.addByPrefix('singRIGHT', 'right', 24, false);
 				animation.addByPrefix('singDOWN', 'down', 24, false);
 
-				globalOffset = [0, 0];
+				globalOffset = [0, 170];
 
 				barColor = FlxColor.fromRGB(49, 255, 234);
 				

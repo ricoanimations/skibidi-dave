@@ -63,64 +63,15 @@ class CreditsMenuState extends MusicBeatState
    var peopleInCredits:Array<Person> = 
    [
       // Developers //
-      new Person("Erizur", CreditsType.Dev,
+      new Person("RicoAnimations", CreditsType.Dev,
       [
-         new Social('youtube', 'https://www.youtube.com/channel/UCdCAaQzt9yOGfFM0gJDJ4bQ'),
-         new Social('twitter', 'https://twitter.com/am_erizur')
+         new Social('youtube', 'https://www.youtube.com/@ricoanimations'),
+         new Social('discord', 'ricoanimations')
       ]),
-
-      new Person("MoldyGH", CreditsType.Dev,
+      // Special Thanks??? //
+      new Person("LankyBox", CreditsType.SpecialThanks,
       [
-         new Social('youtube', 'https://www.youtube.com/channel/UCHIvkOUDfbMCv-BEIPGgpmA'), 
-         new Social('twitter', 'https://twitter.com/moldy_gh'),
-         new Social('soundcloud', 'https://soundcloud.com/moldygh')
-      ]),
-     
-      new Person("MissingTextureMan101", CreditsType.Dev,
-      [
-         new Social('youtube', 'https://www.youtube.com/channel/UCCJna2KG54d1604L2lhZINQ'),
-         new Social('twitter', 'https://twitter.com/OfficialMTM101'),
-         new Social('twitch', 'https://www.twitch.tv/missingtextureman101'),
-         new Social('gamebanana', 'https://gamebanana.com/members/1665049')
-      ]),
-
-      new Person("T5mpler", CreditsType.Dev,
-      [
-         new Social('youtube', 'https://www.youtube.com/channel/UCgNoOsE_NDjH6ac4umyADrw'),
-         new Social('twitter', 'https://twitter.com/RealT5mpler'),
-         new Social('souncloud', 'https://soundcloud.com/t5mpler')
-      ]),
-
-      new Person("rapparep lol", CreditsType.Dev,
-      [
-         new Social('youtube', 'https://www.youtube.com/channel/UCKfdkmcdFftv4pFWr0Bh45A'),
-         new Social('twitter', 'https://twitter.com/rappareplol')
-      ]),
-
-      new Person("TheBuilderXD", CreditsType.Dev,
-      [
-         new Social('youtube', 'https://www.youtube.com/user/99percentMember'),
-         new Social('twitter', 'https://twitter.com/TheBuilderXD')
-      ]),
-
-      // Translators //
-
-      new Person("dani", CreditsType.Translator,
-      [
-         new Social('youtube', 'https://youtube.com/channel/UCzCcYbUwbtSJcAQH0IZl-pA'),
-         new Social('twitter', 'https://twitter.com/danicheese99')
-      ]),
-
-      new Person("Aizakku", CreditsType.Translator,
-      [
-         new Social('youtube', 'https://www.youtube.com/channel/UCmSCR85PlhbHGHm-wxiA6sA'),
-         new Social('twitter', 'https://twitter.com/ItsAizakku')
-      ]),
-
-      new Person("Soulegal", CreditsType.Translator,
-      [
-            new Social('youtube', 'https://www.youtube.com/channel/UC7VSf4ITAMN83hL3zQbqt3w'),
-            new Social('twitter', 'https://twitter.com/nickstwt')
+         new Social('youtube', 'https://www.youtube.com/@LankyBox')
       ])
    ];
 

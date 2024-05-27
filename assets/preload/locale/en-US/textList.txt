@@ -22,7 +22,8 @@ desc_options==Adjust game settings and keybinds.
 desc_discord==Join the official Vs. Dave and Bambi Discord!
 
 // Freeplay State //
-freeplay_base==Base
+freeplay_story==Story
+freeplay_extra==Extras
 
 freeplay_personalBest==PERSONAL BEST:
 freeplay_hard==HARD
@@ -83,14 +84,12 @@ keybind_preset==Keybind Presets:
 // Story Mode State //
 story_track==Tracks
 story_weekScore==WEEK SCORE:
-story_week0==Tutorial
-story_week1==Daddy Dearest
-story_week2==Spooky Month
-story_week3==Pico
-story_week4==Mommy Must Murder
-story_week5==Red Snow
-story_week6==hating simulator ft. moawling
-story_week7==Tankman
+story_week0==here's some rizz, grimace shake
+story_week1==just a normal dave week...
+story_week2==erm, what the sigma?
+story_week3==TODAY IN AMONG US, WE'RE MEWING
+story_week4==random brainrot songs FT. LankyBox & Grant Wisler
+story_week5==the FINALE...
 
 // CHARACTER SELECT STATE //
 character_reset==Press R To Reset
@@ -106,11 +105,11 @@ play_miss==Misses:
 play_accuracy==Accuracy:
 
 // Credits State //
-credits_dev==Developers
+credits_dev==Developers (only 1 person worked on this mod)
 credits_translator==Translators
 credits_contributor==Contributors
 credits_betaTester==Beta Testers
-credits_specialThanks==Special Thanks
+credits_specialThanks==NO Special Thanks
 
 credits_songby==Song by
 
