@@ -6,3 +6,4 @@ amogus:amogus:#31ffea
 lankybox:lankybox:#ffdee7
 tristan:tristan:#ff130f
 bambi:bambi:#25bf37
+sponge:sponge:#fff76b
