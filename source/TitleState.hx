@@ -170,7 +170,7 @@ class TitleState extends MusicBeatState
 		blackScreen = new FlxSprite().makeGraphic(FlxG.width, FlxG.height, FlxColor.BLACK);
 		credGroup.add(blackScreen);
 
-		credTextShit = new Alphabet(0, 0, "MoldyGH\nMissingTextureMan101\nRapparep\nZmac\nTheBuilder\nT5mpler\nErizur", true);
+		credTextShit = new Alphabet(0, 0, "RicoAnimations", true);
 		credTextShit.antialiasing = true;
 		credTextShit.screenCenter();
 
@@ -190,10 +190,8 @@ class TitleState extends MusicBeatState
 		// credGroup.add(credTextShit);
 
 		// Init the first line of text on the intro start to prevent the intro text bug
-		createCoolText(['Engine Created by:']);
-		addMoreText('MoldyGH');
-		addMoreText('MissingTextureMan101');
-		addMoreText('Rapparep LOL');
+		createCoolText(['Mod Created by:']);
+		addMoreText('RicoAnimations');
 	}
 
 	function getIntroTextShit():Array<Array<String>>
@@ -302,16 +300,15 @@ class TitleState extends MusicBeatState
 			switch (curBeat)
 			{
 				case 3:
-					addMoreText('TheBuilderXD');
-					addMoreText('Erizur, T5mpler');
+					addMoreText('Rico');
 				case 4:
-					addMoreText('and our wonderful contributors!');
+					addMoreText('and the brainrot people');
 				case 5:
 					deleteCoolText();
 				case 6:
-					createCoolText(['Based on Kade Engine']);
+					createCoolText(['A Dave and Bambi Fan-mod']);
 				case 7:
-					addMoreText('specifically version 1.2');
+					addMoreText('built off of the original engine');
 				case 8:
 					deleteCoolText();
 				case 9:
@@ -323,9 +320,11 @@ class TitleState extends MusicBeatState
 				case 12:
 					addMoreText("Friday Night Funkin'");
 				case 13:
-					addMoreText('Dave');
+					addMoreText('VS.');
 				case 14:
-					addMoreText('Engine');
+					addMoreText('Skibidi');
+				case 15:
+					addMoreText('Dave');
 				case 16:
 					skipIntro();
 			}
