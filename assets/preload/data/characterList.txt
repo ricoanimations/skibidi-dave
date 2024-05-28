@@ -7,3 +7,5 @@ lankybox:lankybox:#ffdee7
 tristan:tristan:#ff130f
 bambi:bambi:#25bf37
 sponge:sponge:#fff76b
+dave:dave:#0f5fff
+dave-annoyed:dave-annoyed:#0f5fff

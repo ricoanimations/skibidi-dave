@@ -386,6 +386,23 @@ class Character extends FlxSprite
 				barColor = FlxColor.fromRGB(255, 247, 107);
 				
 				playAnim('idle');
+			case 'dave-annoyed':
+				frames = Paths.getSparrowAtlas('characters/Dave_insanity_lol', 'shared');
+				animation.addByPrefix('idle', 'idle', 24, false);
+				for (anim in ['left', 'down', 'up', 'right'])
+				{
+					animation.addByPrefix('sing${anim.toUpperCase()}', anim, 24, false);
+				}
+				animation.addByPrefix('scared', 'scared', 24, true);
+				animation.addByPrefix('um', 'um', 24, true);
+
+				globalOffset = [0, 170];
+
+				loadOffsetFile(curCharacter);
+
+				barColor = FlxColor.fromRGB(15, 95, 255);
+
+				playAnim('idle');
 		}
 		dance();
 
