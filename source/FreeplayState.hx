@@ -210,7 +210,7 @@ class FreeplayState extends MusicBeatState
 				addWeek(['sigma', 'GET-OUT', 'PERNICIOUS'], 0, ['squid', 'sigma', 'dave']);
 				addWeek(['mewing-master', 'let-them-burn', 'COMBUSTION'], 3, ['amogus', 'amogus', 'dave']);
 				addWeek(['skibidi-rizz', 'skibidi-slicers', 'skibidi-battle'], 4, ['lankybox', 'grantwisler', 'dave']);
-				addWeek(['PHANTASMAGORIA', 'ETERNAL-EDGING', 'fin'], 1, ['dave', 'dave', 'dave']);
+				addWeek(['PHANTASMAGORIA', 'ETERNAL-EDGING', 'DENOUEMENT'], 1, ['dave', 'dave', 'dave']);
 			case 'extras':
 				addWeek(['skibidi-rizz-old', 'sigma-old'], 1, ['dave', 'dave']);
 				addWeek(['all-my-sigmas'], 3, ['rico']);
@@ -373,7 +373,7 @@ class FreeplayState extends MusicBeatState
 						{
 							addSong(song, weekNum, songCharacters[num], false);
 						}
-				case 'phantasmagoria' | 'eternal-edging' | 'fin':
+				case 'phantasmagoria' | 'eternal-edging' | 'denouement':
 					if (!StoryMenuState.weekUnlocked[5])
 						{
 							addSong('unknown', weekNum, songCharacters[num], true);

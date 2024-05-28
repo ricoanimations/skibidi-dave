@@ -13,4 +13,4 @@ internal,skibidi-slicers,face,good
 internal,skibidi-battle,dave,good
 internal,phantasmagoria,bf,good
 internal,eternal-edging,dave,good
-internal,fin,bf,good
+internal,denouement,bf,good
