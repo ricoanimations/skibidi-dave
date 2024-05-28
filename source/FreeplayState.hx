@@ -207,8 +207,8 @@ class FreeplayState extends MusicBeatState
 			case 'story':
 				addWeek(['rizzing-tips'], 2, ['gf']);
 				addWeek(['plains', 'concealed', 'skibidi-dave'], 1, ['dave', 'dave', 'dave']);
-				addWeek(['sigma', 'GET-OUT', 'PERNICIOUS'], 0, ['squid', 'squid', 'squid']);
-				addWeek(['mewing-master', 'let-them-burn', 'COMBUSTION'], 3, ['amogus', 'amogus', 'amogus']);
+				addWeek(['sigma', 'GET-OUT', 'PERNICIOUS'], 0, ['squid', 'sigma', 'dave']);
+				addWeek(['mewing-master', 'let-them-burn', 'COMBUSTION'], 3, ['amogus', 'amogus', 'dave']);
 				addWeek(['skibidi-rizz', 'skibidi-slicers', 'skibidi-battle'], 4, ['lankybox', 'grantwisler', 'dave']);
 				addWeek(['PHANTASMAGORIA', 'ETERNAL-EDGING', 'fin'], 1, ['dave', 'dave', 'dave']);
 			case 'extras':
