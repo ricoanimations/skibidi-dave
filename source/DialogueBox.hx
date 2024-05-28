@@ -62,6 +62,16 @@ class DialogueBox extends FlxSpriteGroup
 		{
 			switch (PlayState.SONG.song.toLowerCase())
 			{
+				case 'plains' | 'concealed':
+					randomNumber = FlxG.random.int(0, 10);
+					if (randomNumber == 10)
+					{
+						FlxG.sound.playMusic(Paths.music('secret'), 0);
+					}
+					else
+					{
+						FlxG.sound.playMusic(Paths.music('DaveDialogue'), 0);
+					}
 				default:
 					FlxG.sound.music.stop();
 			}
@@ -102,6 +112,12 @@ class DialogueBox extends FlxSpriteGroup
 		portraitRight = new FlxSprite();
 
 		portraitRightCharacter = ['bf', 'normal'];
+
+		switch (PlayState.SONG.song.toLowerCase())
+		{
+			case 'plains':
+				portraitLeftCharacter = ['dave', 'normal'];
+		}
 
 		/*
 		switch (PlayState.SONG.song.toLowerCase())
@@ -371,6 +387,40 @@ class DialogueBox extends FlxSpriteGroup
 
 		switch (character)
 		{
+			case 'dave':
+				switch (expression)
+				{
+					case 'annoyed':
+						portrait.portraitPath = 'dialogue/dave/dave_annoyed';
+					case 'scared':
+						portrait.portraitPath = 'dialogue/dave/dave_scared';
+						portrait.portraitAnim = new Animation('enter', 'post insanity', 24, true, [false, false]);
+					case 'phone':
+						portrait.portraitPath = 'dialogue/dave/dave_phone';
+					case '3d-scared':
+						portrait.portraitPath = 'dialogue/dave/dave_3d_scared';
+					case 'post-maze':
+						portrait.portraitPath = 'dialogue/dave/dave_postMaze';
+					case 'splitathon':
+						portrait.portraitPath = 'dialogue/dave/dave_splitathon';
+					case 'festival':
+						portrait.portraitPath = 'dialogue/dave/dave_festival_happy';
+					case 'festival-exhausted':
+						portrait.portraitPath = 'dialogue/dave/dave_festival_exhausted';
+					case 'festival-tired':
+						portrait.portraitPath = 'dialogue/dave/dave_festival_tired';
+					case 'festival-3d-scared':
+						portrait.portraitPath = 'dialogue/dave/dave_3d_festival';
+					case 'shocked':
+						portrait.portraitPath = 'dialogue/dave/dave_shocked';
+					case 'erm':
+						portrait.portraitPath = 'dialogue/dave/dave_erm';
+					case 'furious':
+						portrait.portraitPath = 'dialogue/dave/dave_furious';
+					default:
+						portrait.portraitPath = 'dialogue/dave/dave_happy';
+				}
+				portrait.left = true;
 			case 'bf':
 				switch (expression)
 				{
