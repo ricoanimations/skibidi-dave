@@ -338,15 +338,6 @@ class FreeplayState extends MusicBeatState
 			switch (song.toLowerCase())
 			{
 				case 'plains' | 'concealed' | 'skibidi-dave':
-					if (!StoryMenuState.weekUnlocked[1])
-						{
-							addSong('unknown', weekNum, songCharacters[num], true);
-						}
-						else
-						{
-							addSong(song, weekNum, songCharacters[num], false);
-						}
-				case 'sigma' | 'get-out' | 'pernicious':
 					if (!StoryMenuState.weekUnlocked[2])
 						{
 							addSong('unknown', weekNum, songCharacters[num], true);
@@ -355,7 +346,7 @@ class FreeplayState extends MusicBeatState
 						{
 							addSong(song, weekNum, songCharacters[num], false);
 						}
-				case 'mewing-master' | 'let-them-burn' | 'combustion':
+				case 'sigma' | 'get-out' | 'pernicious':
 					if (!StoryMenuState.weekUnlocked[3])
 						{
 							addSong('unknown', weekNum, songCharacters[num], true);
@@ -364,8 +355,17 @@ class FreeplayState extends MusicBeatState
 						{
 							addSong(song, weekNum, songCharacters[num], false);
 						}
-				case 'skibidi-rizz' | 'skibidi-slicers' | 'skibidi-battle':
+				case 'mewing-master' | 'let-them-burn' | 'combustion':
 					if (!StoryMenuState.weekUnlocked[4])
+						{
+							addSong('unknown', weekNum, songCharacters[num], true);
+						}
+						else
+						{
+							addSong(song, weekNum, songCharacters[num], false);
+						}
+				case 'skibidi-rizz' | 'skibidi-slicers' | 'skibidi-battle':
+					if (!StoryMenuState.weekUnlocked[5])
 						{
 							addSong('unknown', weekNum, songCharacters[num], true);
 						}
