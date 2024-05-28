@@ -205,17 +205,15 @@ class FreeplayState extends MusicBeatState
 		switch (Catagories[CurrentPack].toLowerCase())
 		{
 			case 'story':
-				addWeek(['rizzing-tips'], 2, ['gf']);
 				addWeek(['plains', 'concealed', 'skibidi-dave'], 1, ['dave', 'concealed', 'dave']);
 				addWeek(['sigma', 'GET-OUT', 'PERNICIOUS'], 0, ['squid', 'sigma', 'dave']);
 				addWeek(['mewing-master', 'let-them-burn', 'COMBUSTION'], 3, ['amogus', 'amogus', 'dave']);
 				addWeek(['skibidi-rizz', 'skibidi-slicers', 'skibidi-battle'], 4, ['lankybox', 'grantwisler', 'dave']);
 				addWeek(['PHANTASMAGORIA', 'ETERNAL-EDGING', 'DENOUEMENT'], 1, ['dave', 'dave', 'dave']);
 			case 'extras':
+				addWeek(['rizzing-tips'], 2, ['gf']);
 				addWeek(['TRIPLE-TROUBLE'], 0, ['squid']);
 				addWeek(['skibidi-rizz-old', 'sigma-old'], 1, ['dave', 'dave']);
-				addWeek(['all-my-sigmas'], 3, ['rico']);
-				addWeek(['your-rizz'], 4, ['rico']);
 		}
 	}
 
