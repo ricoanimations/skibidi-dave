@@ -67,8 +67,8 @@ class MainMenuState extends MusicBeatState
 
 	public static var finishedFunnyMove:Bool = false;
 
-	public static var daRealEngineVer:String = 'Dave';
-	public static var engineVer:String = '0.1 ALPHA';
+	public static var daRealEngineVer:String = 'VS. Skibidi Dave';
+	public static var engineVer:String = '1.0 (THIS IS A JOKE MOD)';
 
 	public static var engineVers:Array<String> =
 	[
@@ -223,7 +223,7 @@ class MainMenuState extends MusicBeatState
 
 		firstStart = false;
 
-		var versionShit:FlxText = new FlxText(1, FlxG.height - 25, 0, '${daRealEngineVer} Engine v${engineVer}\nFNF v${gameVer}', 12);
+		var versionShit:FlxText = new FlxText(1, FlxG.height - 25, 0, '${daRealEngineVer} v${engineVer}', 12);
 		versionShit.antialiasing = true;
 		versionShit.scrollFactor.set();
 		versionShit.setFormat("Comic Sans MS Bold", 16, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
