@@ -1450,6 +1450,18 @@ class PlayState extends MusicBeatState
 
 		var playerCounter:Int = 0;
 
+		switch (SONG.song.toLowerCase())
+		{
+			case 'rizzing-tips' | 'plains' | 'concealed' | 'skibidi-dave' | 'sigma' | 'get-out' | 'pernicious' | 'mewing-master' | 'let-them-burn' | 'combustion' | 'skibidi-rizz' | 'skibidi-slicers' | 'skibidi-battle' | 'phantasmagoria' | 'eternal-edging' | 'denouement' | 'sigma-old':
+				Lib.application.window.title = "Friday Night Funkin' | VS. Skibidi Dave | " + ${curSong} + " - RicoAnimations";
+			case 'skibidi-rizz-old':
+				Lib.application.window.title = "Friday Night Funkin' | VS. Skibidi Dave | skibidi-rizz (OLD) - LankyBox";
+			case 'sigma-old':
+				Lib.application.window.title = "Friday Night Funkin' | VS. Skibidi Dave | sigma (OLD) - RicoAnimations";
+			case 'triple-brainrot':
+				Lib.application.window.title = "Friday Night Funkin' | VS. Skibidi Dave | " + ${curSong} + " - MarStarBro, UpTaunt, Punkett (Original), RicoAnimations (Cover)";
+		}
+
 		for (section in noteData)
 		{
 			var sectionCount = noteData.indexOf(section);

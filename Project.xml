@@ -3,7 +3,7 @@
 
 	<!-- _________________________ Application Settings _________________________ -->
 
-	<app title="Friday Night Funkin': VS. Skibidi Dave" file="VsDave" packageName="skibididaveteam.skibididave" package="skibididaveteam.skibididave" main="Main" version="1.0.0" company="skibididaveteam"/>
+	<app title="Friday Night Funkin' | VS. Skibidi Dave" file="SkibidiDave" packageName="skibididaveteam.skibididave" package="skibididaveteam.skibididave" main="Main" version="1.0.0" company="skibididaveteam"/>
 	<app preloader="flixel.system.FlxPreloader"/>
 
 	<set name="APP_ID" value="0x0100f6c013bbc000"/>
