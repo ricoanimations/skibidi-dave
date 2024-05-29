@@ -212,7 +212,7 @@ class FreeplayState extends MusicBeatState
 				addWeek(['PHANTASMAGORIA', 'ETERNAL-EDGING', 'DENOUEMENT'], 1, ['dave', 'dave', 'dave']);
 			case 'extras':
 				addWeek(['rizzing-tips'], 2, ['gf']);
-				addWeek(['TRIPLE-TROUBLE'], 0, ['squid']);
+				addWeek(['TRIPLE-BRAINROT'], 0, ['squid']);
 				addWeek(['skibidi-rizz-old', 'sigma-old'], 1, ['dave', 'dave']);
 		}
 	}
