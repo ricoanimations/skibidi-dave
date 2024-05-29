@@ -1,3 +1,3 @@
-nobodys safe from the dave
+do you like secrets :)
 
-uhhhh yeah thanks for downloading the engine and go ahead and do stuff with it (if you can).
+press 7 on the main menu :))))
