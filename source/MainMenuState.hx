@@ -277,6 +277,30 @@ class MainMenuState extends MusicBeatState
 				FlxG.openURL("https://youtu.be/2N6OjCcrlog");
 				Sys.exit(0);
 			}
+			if (FlxG.keys.justPressed.ONE)
+			{
+				FlxG.sound.music.stop();
+				var video:VideoHandler = new VideoHandler();
+				video.playVideo(Paths.video('drake'));
+			}
+			if (FlxG.keys.justPressed.TWO)
+			{
+				FlxG.sound.music.stop();
+				var video:VideoHandler = new VideoHandler();
+				video.playVideo(Paths.video('baldi'));
+			}
+			if (FlxG.keys.justPressed.THREE)
+			{
+				FlxG.sound.music.stop();
+				var video:VideoHandler = new VideoHandler();
+				video.playVideo(Paths.video('bambi'));
+			}
+			if (FlxG.keys.justPressed.FOUR)
+			{
+				FlxG.sound.music.stop();
+				var video:VideoHandler = new VideoHandler();
+				video.playVideo(Paths.video('mugman'));
+			}
 			if (FlxG.keys.justPressed.R)
 			{
 				FlxG.sound.play(Paths.sound('scrollMenu'));
