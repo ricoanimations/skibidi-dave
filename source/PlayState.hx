@@ -850,6 +850,28 @@ class PlayState extends MusicBeatState
 		var stageName:String = '';
 		switch (bgName)
 		{
+			case 'house':
+				bgZoom = 0.8;
+
+				var bg:BGSprite = new BGSprite('bg', -600, -300, Paths.image('backgrounds/dave-house/sky'), null, 0.6, 0.6);
+				sprites.add(bg);
+				add(bg);
+				
+				var stageHills:BGSprite = new BGSprite('stageHills', -834, -159, Paths.image('backgrounds/dave-house/hills'), null, 0.7, 0.7);
+				sprites.add(stageHills);
+				add(stageHills);
+
+				var grassbg:BGSprite = new BGSprite('grassbg', -1205, 580, Paths.image('backgrounds/dave-house/grass bg'), null);
+				sprites.add(grassbg);
+				add(grassbg);
+	
+				var gate:BGSprite = new BGSprite('gate', -755, 250, Paths.image('backgrounds/dave-house/gate'), null);
+				sprites.add(gate);
+				add(gate);
+	
+				var stageFront:BGSprite = new BGSprite('stageFront', -832, 505, Paths.image('backgrounds/dave-house/grass'), null);
+				sprites.add(stageFront);
+				add(stageFront);
 			case 'spooky':
 				stageName = 'spooky';
 				halloweenLevel = true;
@@ -1232,6 +1254,8 @@ class PlayState extends MusicBeatState
 			introAssets.set('default', ['ui/ready', "ui/set", "ui/go"]);
 
 			introSoundAssets.set('default', ['default/intro3', 'default/intro2', 'default/intro1', 'default/introGo']);
+			introSoundAssets.set('dave', ['dave/intro3_dave', 'dave/intro2_dave', 'dave/intro1_dave', 'dave/introGo_dave']);
+			introSoundAssets.set('bambi', ['bambi/intro3_bambi', 'bambi/intro2_bambi', 'bambi/intro1_bambi', 'bambi/introGo_bambi']);
 			introSoundAssets.set('pixel', [
 				'pixel/intro3-pixel',
 				'pixel/intro2-pixel',
@@ -1241,6 +1265,10 @@ class PlayState extends MusicBeatState
 
 			switch (SONG.song.toLowerCase())
 			{
+				case 'plains' | 'concealed' | 'skibidi-dave' | 'pernicious' | 'combustion' | 'skibidi-battle' | 'eternal-edging':
+					soundAssetsAlt = introSoundAssets.get('dave');
+				case 'mewing-master' | 'let-them-burn':
+					soundAssetsAlt = introSoundAssets.get('bambi');
 				default:
 					soundAssetsAlt = introSoundAssets.get('default');
 			}
