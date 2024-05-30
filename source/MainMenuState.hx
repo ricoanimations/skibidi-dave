@@ -25,6 +25,9 @@ import flixel.util.FlxColor;
 import lime.app.Application;
 import flixel.addons.display.FlxBackdrop;
 import flixel.input.keyboard.FlxKey;
+#if VIDEOS_ALLOWED
+import hxcodec.VideoHandler;
+#end
 #if desktop
 import Discord.DiscordClient;
 #end
@@ -77,6 +80,10 @@ class MainMenuState extends MusicBeatState
 
 	public static var kadeEngineVer:String = "DAVE";
 	public static var gameVer:String = "0.2.7.1";
+
+	#if VIDEOS_ALLOWED
+	var video:VideoHandler = new VideoHandler();
+	#end
 	
 	var bg:FlxSprite;
 	var magenta:FlxSprite;
