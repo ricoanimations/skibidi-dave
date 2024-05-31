@@ -3255,6 +3255,21 @@ class PlayState extends MusicBeatState
 			dad.playAnim('cheer', true);
 		}
 
+		if (SONG.song.toLowerCase() == 'get-out')
+		{
+			switch (curBeat)
+			{
+				case 448:
+					remove(dad);
+					dad = new Character(100, 100, 'sponge');
+					add(dad);
+				case 512:
+					remove(dad);
+					dad = new Character(0, 170, 'squid');
+					add(dad);
+			}
+		}
+
 		var funny:Float = Math.max(Math.min(healthBar.value, 1.9),
 			0.1); // Math.clamp(healthBar.value,0.02,1.98);//Math.min(Math.min(healthBar.value,1.98),0.02);
 

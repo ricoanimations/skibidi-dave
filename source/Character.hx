@@ -384,6 +384,8 @@ class Character extends FlxSprite
 				globalOffset = [0, 170];
 
 				barColor = FlxColor.fromRGB(255, 247, 107);
+
+				scale.set(0.6, 0.6);
 				
 				playAnim('idle');
 			case 'dave-annoyed':
