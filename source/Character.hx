@@ -403,6 +403,20 @@ class Character extends FlxSprite
 				barColor = FlxColor.fromRGB(15, 95, 255);
 
 				playAnim('idle');
+			case 'skibidi-dave':
+				frames = Paths.getSparrowAtlas('characters/skibidi-dave', 'shared');
+
+				animation.addByPrefix('idle', 'idle', 24, false);
+				animation.addByPrefix('singUP', 'up', 24, false);
+				animation.addByPrefix('singLEFT', 'left', 24, false);
+				animation.addByPrefix('singRIGHT', 'right', 24, false);
+				animation.addByPrefix('singDOWN', 'down', 24, false);
+
+				globalOffset = [0, 170];
+
+				barColor = FlxColor.fromRGB(255, 247, 107);
+				
+				playAnim('idle');
 		}
 		dance();
 

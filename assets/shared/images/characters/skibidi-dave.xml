@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="skibidi-dave.png">
+	<!-- Created with Adobe Animate version 23.0.0.407 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="down0000" x="0" y="0" width="609" height="467"/>
+	<SubTexture name="down0001" x="609" y="0" width="609" height="467"/>
+	<SubTexture name="down0002" x="1218" y="0" width="609" height="467"/>
+	<SubTexture name="down0003" x="1827" y="0" width="609" height="467"/>
+	<SubTexture name="idle0000" x="2436" y="0" width="600" height="507"/>
+	<SubTexture name="idle0001" x="3036" y="0" width="600" height="507"/>
+	<SubTexture name="idle0002" x="0" y="507" width="600" height="507"/>
+	<SubTexture name="idle0003" x="600" y="507" width="600" height="507"/>
+	<SubTexture name="left0000" x="1200" y="507" width="896" height="773"/>
+	<SubTexture name="left0001" x="2096" y="507" width="896" height="773"/>
+	<SubTexture name="left0002" x="2992" y="507" width="896" height="773"/>
+	<SubTexture name="left0003" x="0" y="1280" width="896" height="773"/>
+	<SubTexture name="left0004" x="896" y="1280" width="896" height="773"/>
+	<SubTexture name="left0005" x="1792" y="1280" width="896" height="773"/>
+	<SubTexture name="left0006" x="2688" y="1280" width="896" height="773"/>
+	<SubTexture name="left0007" x="0" y="2053" width="896" height="773"/>
+	<SubTexture name="right0000" x="896" y="2053" width="789" height="467"/>
+	<SubTexture name="right0001" x="1685" y="2053" width="789" height="467"/>
+	<SubTexture name="right0002" x="2474" y="2053" width="789" height="467"/>
+	<SubTexture name="right0003" x="3263" y="2053" width="789" height="467"/>
+	<SubTexture name="up0000" x="0" y="2826" width="600" height="476"/>
+	<SubTexture name="up0001" x="600" y="2826" width="600" height="476"/>
+	<SubTexture name="up0002" x="1200" y="2826" width="600" height="476"/>
+	<SubTexture name="up0003" x="1800" y="2826" width="600" height="476"/>
+</TextureAtlas>

@@ -872,6 +872,10 @@ class PlayState extends MusicBeatState
 				var stageFront:BGSprite = new BGSprite('stageFront', -832, 505, Paths.image('backgrounds/dave-house/grass'), null);
 				sprites.add(stageFront);
 				add(stageFront);
+			case 'forest':
+				var bg:BGSprite = new BGSprite('bg', 0, 0, Paths.image('backgrounds/dave-house/dark-forest'), null, 0.6, 0.6);
+				sprites.add(bg);
+				add(bg);
 			case 'spooky':
 				stageName = 'spooky';
 				halloweenLevel = true;

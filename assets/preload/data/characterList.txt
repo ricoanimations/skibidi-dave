@@ -9,3 +9,4 @@ bambi:bambi:#25bf37
 sponge:sponge:#fff76b
 dave:dave:#0f5fff
 dave-annoyed:dave-annoyed:#0f5fff
+skibidi-dave:skibidi-dave:#0f5fff
