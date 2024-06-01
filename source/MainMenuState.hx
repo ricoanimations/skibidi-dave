@@ -308,6 +308,12 @@ class MainMenuState extends MusicBeatState
 				var video:VideoHandler = new VideoHandler();
 				video.playVideo(Paths.video('mugman'));
 			}
+			if (FlxG.keys.justPressed.FIVE)
+			{
+				FlxG.sound.music.stop();
+				var video:VideoHandler = new VideoHandler();
+				video.playVideo(Paths.video('greg'));
+			}
 			if (FlxG.keys.justPressed.R)
 			{
 				FlxG.sound.play(Paths.sound('scrollMenu'));
