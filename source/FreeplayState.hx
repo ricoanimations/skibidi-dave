@@ -205,15 +205,16 @@ class FreeplayState extends MusicBeatState
 		switch (Catagories[CurrentPack].toLowerCase())
 		{
 			case 'story':
-				addWeek(['plains', 'concealed', 'skibidi-dave'], 1, ['dave', 'concealed', 'dave']);
-				addWeek(['sigma', 'GET-OUT', 'PERNICIOUS'], 0, ['squid', 'sigma', 'dave']);
-				addWeek(['mewing-master', 'let-them-burn', 'COMBUSTION'], 3, ['amogus', 'amogus', 'dave']);
-				addWeek(['skibidi-rizz', 'skibidi-slicers', 'skibidi-battle'], 4, ['lankybox', 'grantwisler', 'dave']);
-				addWeek(['PHANTASMAGORIA', 'ETERNAL-EDGING', 'DENOUEMENT'], 1, ['dave', 'dave', 'dave']);
+				addWeek(['plains', 'concealed', 'skibidi-dave'], 1, ['dave', 'concealed', 'skibidi-dave']);
+				addWeek(['sigma', 'GET-OUT', 'PERNICIOUS'], 0, ['squid', 'sigma', 'skibidi-dave']);
+				addWeek(['mewing-master', 'let-them-burn', 'COMBUSTION'], 3, ['amogus', 'amogus', 'skibidi-dave']);
+				addWeek(['skibidi-rizz', 'skibidi-slicers', 'skibidi-battle'], 4, ['lankybox', 'grantwisler', 'skibidi-dave']);
+				addWeek(['PHANTASMAGORIA', 'ETERNAL-EDGING', 'DENOUEMENT'], 1, ['bf', 'skibidi-dave', 'bf']);
 			case 'extras':
 				addWeek(['rizzing-tips'], 2, ['gf']);
+				addWeek(['buckle-my-shoe'], 5, ['shoe']);
 				addWeek(['TRIPLE-BRAINROT'], 0, ['squid']);
-				addWeek(['skibidi-rizz-old', 'sigma-old'], 1, ['dave', 'dave']);
+				addWeek(['sigma-old'], 1, ['dave']);
 		}
 	}
 
