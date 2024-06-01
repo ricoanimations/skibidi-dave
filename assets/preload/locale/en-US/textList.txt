@@ -105,7 +105,7 @@ play_miss==Misses:
 play_accuracy==Accuracy:
 
 // Credits State //
-credits_dev==Developers (only 1 person worked on this mod)
+credits_dev==Creator of the mod
 credits_translator==Translators
 credits_contributor==Contributors
 credits_betaTester==Beta Testers
@@ -114,12 +114,8 @@ credits_specialThanks==NO Special Thanks
 credits_songby==Song by
 
 //developers 
-credit_Erizur==Dave Engine Main Developer
-credit_MoldyGH==Creator of the original VS. Dave Mod
-credit_MissingTextureMan101==Additional help, Programmer
-credit_T5mpler==Programmer & Assistor
-credit_rapparep lol==Artist for the original VS. Dave Mod
-credit_TheBuilderXD==Artist & Programmer for the original VS. Dave Mod
+credit_RicoAnimations==Composer, Charter, Artist, Animator, Coder, Creator
+credit_LankyBox==Original Skibidi Rizz Video
 
 //translators
 credit_dani==Spanish Translator
