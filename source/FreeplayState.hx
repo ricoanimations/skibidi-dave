@@ -374,7 +374,7 @@ class FreeplayState extends MusicBeatState
 							addSong(song, weekNum, songCharacters[num], false);
 						}
 				case 'phantasmagoria' | 'eternal-edging' | 'denouement':
-					if (!StoryMenuState.weekUnlocked[5])
+					if (PlayState.storyWeek == 5 && PlayState.storyPlaylist.length <= 0)
 						{
 							addSong('unknown', weekNum, songCharacters[num], true);
 						}
