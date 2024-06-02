@@ -376,11 +376,11 @@ class FreeplayState extends MusicBeatState
 				case 'phantasmagoria' | 'eternal-edging' | 'denouement':
 					if (PlayState.storyWeek == 5 && PlayState.storyPlaylist.length <= 0)
 						{
-							addSong('unknown', weekNum, songCharacters[num], true);
+							addSong(song, weekNum, songCharacters[num], false);
 						}
 						else
 						{
-							addSong(song, weekNum, songCharacters[num], false);
+							addSong('unknown', weekNum, songCharacters[num], true);
 						}
 				default:
 					addSong(song, weekNum, songCharacters[num]);
