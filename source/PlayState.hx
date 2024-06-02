@@ -3257,16 +3257,30 @@ class PlayState extends MusicBeatState
 
 		if (SONG.song.toLowerCase() == 'get-out')
 		{
+			var suckmyballs = new Character(0, 170, 'squid');
+
 			switch (curBeat)
 			{
 				case 448:
-					remove(dad);
-					dad = new Character(100, 100, 'sponge');
-					add(dad);
+					switchDad('sponge', dad.getPosition(), true, false);
 				case 512:
-					remove(dad);
-					dad = new Character(0, 170, 'squid');
-					add(dad);
+					switchDad('squid', dad.getPosition(), true, false);
+				case 576:
+					switchDad('sponge', dad.getPosition(), true, false);
+				case 592:
+					switchDad('squid', dad.getPosition(), true, false);
+				case 640:
+					switchDad('sponge', dad.getPosition(), true, false);
+					add(suckmyballs);
+				case 704:
+					remove(suckmyballs, true);
+					switchDad('squid', dad.getPosition(), true, false);
+				case 736:
+					switchDad('sponge', dad.getPosition(), true, false);
+				case 768:
+					switchDad('squid', dad.getPosition(), true, false);
+				case 800:
+					switchDad('sponge', dad.getPosition(), true, false);
 			}
 		}
 
@@ -3506,10 +3520,7 @@ class PlayState extends MusicBeatState
 		dadGroup.remove(dad);
 		dad = new Character(position.x, position.y, newChar, false);
 		dadGroup.add(dad);
-		if (FileSystem.exists(Paths.image('ui/iconGrid/${dad.curCharacter}', 'preload')))
-		{
-			iconP2.changeIcon(dad.curCharacter);
-		}
+		iconP2.changeIcon(dad.curCharacter);
 		healthBar.createFilledBar(dad.barColor, boyfriend.barColor);
 
 		if (updateColor)
