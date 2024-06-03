@@ -2397,6 +2397,11 @@ class PlayState extends MusicBeatState
 						storyDifficulty, characteroverride == "none" || characteroverride == "bf" ? "bf" : characteroverride);
 				}
 
+				if (PlayState.storyWeek == 5 && PlayState.storyPlaylist.length <= 0)
+				{
+					FlxG.save.data.week5freeplayUnlocked = true;
+				}
+
 				FlxG.save.data.weekUnlocked = StoryMenuState.weekUnlocked;
 				FlxG.save.flush();
 			}
