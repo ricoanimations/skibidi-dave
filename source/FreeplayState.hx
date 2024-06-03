@@ -213,6 +213,7 @@ class FreeplayState extends MusicBeatState
 			case 'extras':
 				addWeek(['rizzing-tips'], 2, ['gf']);
 				addWeek(['buckle-my-shoe'], 5, ['shoe']);
+				addWeek(['basics-in-brainrot'], 5, ['baldi']);
 				addWeek(['TRIPLE-BRAINROT'], 0, ['squid']);
 				addWeek(['sigma-old'], 1, ['dave']);
 		}
