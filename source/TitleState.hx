@@ -318,13 +318,13 @@ class TitleState extends MusicBeatState
 				case 11:
 					deleteCoolText();
 				case 12:
-					addMoreText("Friday Night Funkin'");
+					addMoreText("Friday Night Funkin':");
 				case 13:
-					addMoreText('VS.');
+					addMoreText("Funkin");
 				case 14:
-					addMoreText('Skibidi');
+					addMoreText('Brainrot');
 				case 15:
-					addMoreText('Dave');
+					deleteCoolText();
 				case 16:
 					skipIntro();
 			}

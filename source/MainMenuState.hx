@@ -70,8 +70,8 @@ class MainMenuState extends MusicBeatState
 
 	public static var finishedFunnyMove:Bool = false;
 
-	public static var daRealEngineVer:String = 'VS. Skibidi Dave';
-	public static var engineVer:String = '1.0 (THIS IS A JOKE MOD)';
+	public static var daRealEngineVer:String = "Funkin' Brainrot";
+	public static var engineVer:String = '1.0';
 
 	public static var engineVers:Array<String> =
 	[
